@@ -1,0 +1,38 @@
+# Task Tracker CLI
+
+A simple command-line interface for managing tasks based on the challenge [Task Tracker](https://roadmap.sh/projects/task-tracker)
+
+## Requirements
+
+- Python 3.6+
+
+## Usage
+
+Run the script with Python:
+
+```
+python task_cli.py [command] [arguments]
+```
+
+## Commands
+
+- Add task: `add "Task description"`
+- Update task: `update [id] "New description"`
+- Delete task: `delete [id]`
+- Mark as in progress: `mark-in-progress [id]`
+- Mark as done: `mark-done [id]`
+- List all tasks: `list`
+- List by status: `list [todo/in-progress/done]`
+
+## Examples
+
+```
+python main.py add "Buy groceries"
+python main.py update 1 "Buy groceries and cook dinner"
+python main.py mark-done 1
+python main.py list
+```
+
+## Data Storage
+
+Tasks are stored in `tasks.json` in the script's directory.
